@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>News feed</title>
+</head>
+<body>
+
+  <!-- Header -->
+    <header class="header"> 
+        <div class="logo">
+            <a href="./index.html" class="logo-text-big">fantq</a><span class="logo-text">news</span> 
+        </div>
+        <span class="material-symbols-outlined dark_mode">dark_mode</span>
+    </header>
+
+    <!-- Main section -->
+    <main class="container">
+        <div id="news-container" class = "news-container"></div>
+        <button class="admin_panel">Admin panel</button>
+        <button class="button_add-news">Додати новину</button>
+
+        <div class="add-news_container">
+            <div class="add-news_box">
+                <p class="add_title">Введіть назву новини:</p>
+                <input type="text" class="add-input_title">
+                <p class="add_description">Введіть опис новини:</p>
+                <input type="text" class="add-input_description">
+                <p class="add_paragraph">Введіть повний текст новини:</p>
+                <textarea class="add-input_paragraph"></textarea>
+                <p class="add_image">Введіть посилання на картинку до новини:</p>
+                <input type="text" class="add-input_image">
+                <button class="send-add_news">Відправити новину</button>
+                <div class="add-news_error"></div>
+            </div>
+            <div class="add-news_prewiev">
+                <p>Prewiev news:</p>
+                <div class="news-item_prewiev">
+                    <img class="news-image_prewiev" src="https://nonews.co/wp-content/uploads/2016/11/www.podoliya.in_.ua_wp_content_uploads_2014_03_1386552010_ccd4518_biyka_na_bankoviy_75.jpg" alt="Error url image">
+                    <a href="" target="_blank">
+                        <div class="news-content_prewiev">
+                            <h2 class="news-title_prewiev">Вибори до президента</h2>
+                            <p class="news-description_prewiev">Порошенко досі не може вгамуватися. Тільки вчора говорив що залишає цю ідею, бо немає підтримки, а сьогодні вже влаштовує пікети перед Офісом Президента. </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
